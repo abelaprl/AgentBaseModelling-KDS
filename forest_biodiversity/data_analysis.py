@@ -1,5 +1,6 @@
 # This file was renamed from statistics.py to data_analysis.py to avoid shadowing the stdlib statistics module.
 
+import math
 import pandas as pd
 import numpy as np
 from forest_biodiversity.agents import Tree, selected_species
@@ -26,5 +27,5 @@ def compute_shannon_index(model):
     if total == 0:
         return 0.0
     proportions = [count / total for count in species_counts if count > 0]
-    shannon = -sum(p * log(p) for p in proportions)
+    shannon = -sum(p * log(p, math.e) for p in proportions)
     return shannon
