@@ -67,7 +67,7 @@ def ShannonIndexIndicator(model):
     def recalc():
         set_shannon(compute_shannon_index(model))
 
-    solara.Text(f"Shannon Diversity Index: {shannon:.3f}", style={"fontWeight": "bold", "fontSize": "1.2em", "color": "black"})
+    solara.Text(f"Shannon Diversity Index: {shannon:.3f}", style={"fontWeight": "bold", "fontSize": "1.2em", "color": "white"})
     solara.Button(label="Recalculate Shannon Index", on_click=recalc, style={"marginTop": "0.5em"})
 
 
