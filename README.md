@@ -6,6 +6,20 @@ This project simulates a forest ecosystem using agent-based modeling with the Me
 
 ## How to Run
 
+First initiate python virtual environment
+
+```
+python -m venv venv
+```
+
+Make sure that pip is updated to the latest version
+
+```
+python -m pip install --upgrade pip
+```
+
+
+
 To run the model interactively, in this directory, run:
 
 ```
