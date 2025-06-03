@@ -1,30 +1,12 @@
-# AgentBaseModelling-KDS
-
 # Forest Biodiversity Simulation
 
 This project simulates a forest ecosystem using agent-based modeling with the Mesa framework. It features a grid-based environment, five randomized tree species from GBIF data, and allows for parameterization by elevation, growth rate, and reproduction rate. The simulation includes basic statistical analysis and visualization, and a Solara-based GUI frontend.
 
 ## How to Run
 
-First initiate python virtual environment
-
-```
-python -m venv venv
-```
-
-Make sure that pip is updated to the latest version
-
-```
-python -m pip install --upgrade pip
-```
-
-
-
 To run the model interactively, in this directory, run:
 
-```
 $ solara run app.py
-```
 
 ## Files
 
@@ -37,4 +19,8 @@ $ solara run app.py
 
 ## Data
 
-The simulation uses `GBIF_Data.csv` to randomize five tree species and their characteristics.
+The simulation uses GBIF_Data.csv to randomize five tree species and their characteristics.
+
+## Architecture
+
+This project follows the architecture of the Wolf-Sheep Predation Model (see `wolf_sheep.md.txt`).
