@@ -4,9 +4,33 @@ This project simulates a forest ecosystem using agent-based modeling with the Me
 
 ## How to Run
 
-To run the model interactively, in this directory, run:
+Create python virtual environment:
+```bash
+python -m venv venv
+```
 
-$ solara run app.py
+Activate virtual environment:
+```bash
+# Windows
+venv\Scripts\activate
+# macOS/Linux
+source venv/bin/activate
+```
+
+Update pip to latest version:
+```bash
+python -m pip install --upgrade pip
+```
+
+Install requirements:
+```bash
+pip install -r requirements.txt
+```
+
+Run the interactive model:
+```bash
+solara run app.py
+```
 
 ## Files
 
